@@ -1,0 +1,10 @@
+.navbar-brand{
+    color: red;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
