@@ -13,13 +13,6 @@ export class MovieApiService {
 
   apiKey ='419aca37369ac99369f842c58a814047'
 
-  item:any='the avengers'
-
-  bannerApiData():Observable<any>{
-    return this.http.get(`https://www.omdbapi.com/?s=${this.item}&apikey=75f44973`);
-  
-  }
-
   bannerData1():Observable<any>{
     return this.http.get(`https://www.omdbapi.com/?t=john wick&apikey=75f44973`)
   }

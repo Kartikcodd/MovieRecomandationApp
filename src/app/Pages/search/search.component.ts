@@ -17,12 +17,15 @@ export class SearchComponent implements OnInit {
 
     // console.log(this.search);
     this.api.searchItem(this.search).subscribe((result)=>{
-      console.log(result.Error);
+      // console.log(result.Error);
        if(result.Error=='Movie not found!'){
         this.show=true;
+        // this.search="";
        }
        else{
          this.Solution = result.Search;
+         this.show=false;
+        //  this.search="";
        }
     })
     this.search="";
